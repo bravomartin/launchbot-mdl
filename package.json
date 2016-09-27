@@ -1,11 +1,11 @@
 {
-  "name": "material-design-lite",
+  "name": "launchbot-mdl",
   "version": "1.2.1",
-  "description": "Material Design Components in CSS, JS and HTML",
+  "description": "Styleguide for Launchbot",
   "private": true,
   "license": "Apache-2.0",
-  "author": "Google",
-  "repository": "google/material-design-lite",
+  "author": "Martin Bravo",
+  "repository": "bravomartin/launchbot-mdl",
   "main": "dist/material.min.js",
   "devDependencies": {
     "acorn": "^4.0.3",
