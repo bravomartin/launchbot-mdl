@@ -61,22 +61,6 @@ const AUTOPREFIXER_BROWSERS = [
   'bb >= 10'
 ];
 
-// ***** Development tasks ****** //
-
-// Lint JavaScript
-gulp.task('lint', () => {
-  return gulp.src([
-      'src/**/*.js',
-      'gulpfile.babel.js'
-    ])
-    .pipe(reload({stream: true, once: true}))
-    .pipe($.jshint())
-    .pipe($.jscs())
-    .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe($.jscs.reporter())
-    .pipe($.if(!browserSync.active, $.jshint.reporter('fail')))
-    .pipe($.if(!browserSync.active, $.jscs.reporter('fail')));
-});
 
 // ***** Production build tasks ****** //
 
@@ -89,7 +73,6 @@ gulp.task('styles:dev', () => {
     }))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe(gulp.dest('.tmp/styles'))
-    .pipe($.size({title: 'styles'}));
 });
 
 
