@@ -64,8 +64,8 @@
    We should be able to improve on this once CSS Font Loading L3 becomes more
    widely available.
 */
-$preferred_font: 'Work Sans', 'Lucida Sans', 'Arial', sans-serif !default;
-$performance_font: 'Work Sans', 'Lucida Sans', 'Arial', sans-serif !default;
+$preferred_font: Arimo, 'Work Sans', 'Lucida Sans', 'Arial', sans-serif !default;
+$performance_font: Arimo, 'Work Sans', 'Lucida Sans', 'Arial', sans-serif !default;
 
 /* ==========  COLORS  ========== */
 
@@ -114,9 +114,9 @@ $color-accent-contrast: $color-dark-contrast !default;
 
 $color-primary: '0, 120, 245';
 $color-primary-dark: '0,100,200';
-$color-accent: '230,20,20';
-// $color-primary-contrast: '$color-primary-contrast';
-// $color-accent-contrast: '$color-accent-contrast';
+$color-accent: '240,20,20';
+$color-primary-contrast: '250,250,250';
+$color-accent-contrast: '250,250,250';
 
 
 /* ==========  Typography  ========== */
