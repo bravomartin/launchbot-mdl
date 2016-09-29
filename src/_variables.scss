@@ -103,20 +103,45 @@ $color-primary-contrast: $color-dark-contrast !default;
 // Our accent is dark, so use $color-dark-contrast for overlaid text.
 $color-accent-contrast: $color-dark-contrast !default;
 
-// Replace all colors with placeholders if we're generating a template.
-@if $styleguide-generate-template == true {
-  $color-primary: '$color-primary';
-  $color-primary-dark: '$color-primary-dark';
-  $color-accent: '$color-accent';
-  $color-primary-contrast: '$color-primary-contrast';
-  $color-accent-contrast: '$color-accent-contrast';
-}
 
-$color-primary: '0, 120, 245';
-$color-primary-dark: '0,100,200';
+
+$white: #fff;
+$black: #000;
+
+$color-background-dark: darken($white, 80);
+$color-background: $white;
+$color-background-light: darken($white, 10);
+$color-background-lighter: darken($white, 04);
+
+$color-text-dark: darken($white, 85);
+$color-text: darken($white, 75);
+$color-text-light: darken($white, 60);
+$color-text-lighter: darken($white, 40);
+$color-text-white: $white;
+
+$color-border-dark: darken($white, 80);
+$color-border: darken($white, 55);
+$color-border-light: darken($white, 25);
+$color-border-lighter: darken($white, 7);
+
+
+
+
+
+
+
+$color-primary: '10, 55, 120';
+$color-primary-dark: '0,50,100';
 $color-accent: '240,20,20';
 $color-primary-contrast: '250,250,250';
 $color-accent-contrast: '250,250,250';
+
+
+
+
+
+
+
 
 
 /* ==========  Typography  ========== */
@@ -126,7 +151,7 @@ $color-accent-contrast: '250,250,250';
 // and text-color-secondary-inverse.
 
 $text-color-primary: unquote("rgba(#{$color-black}, 0.87)") !default;
-$text-link-color: unquote("rgb(#{$color-accent})") !default;
+$text-link-color: unquote("rgb(#{$color-primary-dark})") !default;
 
 // Define whether to target elements directly for typographic enhancements.
 // Turning this off means you need to use mdl-* classes more often.
@@ -491,7 +516,7 @@ $button-min-width: 64px !default;
 $button-height: 36px !default;
 $button-padding: 16px !default;
 $button-margin: 4px !default;
-$button-border-radius: 2px !default;
+$button-border-radius: 0px !default;
 
 $button-fab-size: 56px !default;
 $button-fab-size-mini: 40px !default;
