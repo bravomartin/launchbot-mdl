@@ -113,6 +113,7 @@
 
   ul, ol {
     @include typo-body-1;
+    padding-left: 2rem;
   }
 }
 
