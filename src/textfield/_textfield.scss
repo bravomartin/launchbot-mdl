@@ -65,7 +65,7 @@
   font-size: $input-text-font-size;
   font-family: $performance_font;
   margin: 0;
-  padding: $input-text-padding 0;
+  padding: $input-text-padding;
   width: $input-text-width;
   background: none;
   text-align: left;
@@ -107,7 +107,7 @@
   bottom: 0;
   color: $input-text-label-color;
   font-size: $input-text-font-size;
-  left: 0;
+  left: $input-text-padding;
   right: 0;
   pointer-events: none;
   position: absolute;
@@ -163,7 +163,7 @@
     bottom: $input-text-vertical-spacing;
     content: '';
     height: 2px;
-    left: 45%;
+    left: 0%;
     position: absolute;
     @include material-animation-default();
     visibility: hidden;

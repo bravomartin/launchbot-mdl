@@ -54,7 +54,15 @@
     background: $badge-background;
     color: $badge-color;
   }
+  
+  &.mdl-badge--white {
+    &[data-badge]:after {
+      color: $black;
+      background: $white;
 
+      box-shadow: 0 0 1px gray;
+    }
+  }
   &.mdl-badge--no-background {
     &[data-badge]:after {
       color: $badge-color-inverse;

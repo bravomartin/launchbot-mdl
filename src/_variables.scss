@@ -66,6 +66,7 @@
 */
 $preferred_font: Arimo, 'Work Sans', 'Lucida Sans', 'Arial', sans-serif !default;
 $performance_font: Arimo, 'Work Sans', 'Lucida Sans', 'Arial', sans-serif !default;
+$monospaced_font: Consolas, Menlo, Monaco, "Lucida Console", monospace;
 
 /* ==========  COLORS  ========== */
 
@@ -107,6 +108,16 @@ $color-accent-contrast: $color-dark-contrast !default;
 
 $white: #fff;
 $black: #000;
+
+
+$darkest-gray: darken($white, 90);
+$darker-gray: darken($white, 70);
+$dark-gray: darken($white, 55);
+$medium-gray: darken($white, 36);
+$light-gray: darken($white, 21);
+$lighter-gray: darken($white, 08);
+$lightest-gray: darken($white, 04);
+
 
 $color-background-dark: darken($white, 80);
 $color-background: $white;
