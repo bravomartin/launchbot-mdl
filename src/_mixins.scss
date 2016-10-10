@@ -118,7 +118,7 @@
 
 @mixin typo-body-2($colorContrast: false, $usePreferred: false) {
   @include typo-preferred-font($usePreferred);
-  font-size: 14px;
+  // font-size: 14px;
   @if $usePreferred {
     font-weight: 500;
   } @else {
@@ -134,7 +134,7 @@
 
 @mixin typo-body-1($colorContrast: false, $usePreferred: false) {
   @include typo-preferred-font($usePreferred);
-  font-size: 14px;
+  // font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
@@ -183,7 +183,7 @@
 
 @mixin typo-menu($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 14px;
+  // font-size: 14px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0;
@@ -195,7 +195,7 @@
 
 @mixin typo-button($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
-  font-size: 14px;
+  // font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
