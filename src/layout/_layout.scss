@@ -302,7 +302,7 @@
 
     @media screen and (max-width: $layout-screen-size-threshold) {
       & {
-        display: none;
+        // display: none;
       }
 
       .mdl-layout--fixed-header > .mdl-layout__inner-container > & {
