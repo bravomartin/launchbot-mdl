@@ -1,0 +1,4 @@
+.raised-card {
+  background-color: $color-background-lighter;
+  @include shadow-4dp();
+}
