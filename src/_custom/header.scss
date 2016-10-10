@@ -1,0 +1,48 @@
+.lb-header {
+  .lb-logo {
+    cursor: pointer;
+    font-size: 25px;
+    img {
+      max-height: 50px;  
+    }
+    .lb-version {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }  
+  }
+  
+  .lb-nav-item {
+    cursor: pointer;
+    display: inline-block;
+    height: 64px;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    .mdl-button--icon:hover {
+      background-color: inherit;
+      color: $color-primary-dark;
+    }
+    &:not(.lb-nav-item-no-underline):after {
+      content: "";
+      background-color: white;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 4px;
+      transition: width.25s cubic-bezier(.86,0,.07,1);
+    } 
+    .lb-nav-item-no-underline:hover {
+      .mdl-button-icon {
+        color: red;
+      }
+    }
+    
+    &.lb-nav-item-current, &:hover {
+      &:after{
+        width: 100%;  
+      }
+    }
+  }
+}
