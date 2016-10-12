@@ -26,8 +26,8 @@
   width: $card-width;
   z-index: $card-z-index;
   position: relative;
-  background: $card-background-color;
-  border-radius: 2px;
+  background: $color-background-lighter;
+  // border-radius: 2px;
   box-sizing: border-box;
 }
 
@@ -52,9 +52,10 @@
   perspective-origin: $card-title-perspective-origin-x $card-title-perspective-origin-y;
   transform-origin: $card-title-transform-origin-x $card-title-transform-origin-y;
   box-sizing: border-box;
+  background: none!important;
 
   &.mdl-card--border {
-    border-bottom: 1px solid $card-border-color;
+    // border-bottom: 1px solid $card-border-color;
   }
 }
 
@@ -80,7 +81,7 @@
 .mdl-card__supporting-text {
   color: $card-supporting-text-text-color;
   font-size: $card-supporting-text-font-size;
-  line-height: $card-supporting-text-line-height;
+  line-height: 1.4;
   overflow: hidden;
   padding: $card-vertical-padding $card-horizontal-padding;
   width: 90%;

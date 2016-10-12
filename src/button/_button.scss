@@ -74,10 +74,10 @@ input.mdl-button[type="submit"] {
   // Raised buttons
   .mdl-button--raised {
     background: $button-primary-color;
-    @include shadow-2dp();
+    // @include shadow-2dp();
 
     &:active {
-      @include shadow-4dp();
+      // @include shadow-4dp();
       background-color: $button-active-color;
     }
 
@@ -247,6 +247,12 @@ input.mdl-button[type="submit"] {
   &.mdl-button--raised, &.mdl-button--fab {
     color: $button-secondary-color-alt;
     background-color: $button-primary-color-alt;
+  }
+  &:hover {
+   background: $button-hover-color-alt; 
+  }
+  &:active {
+   background: $button-primary-color-alt; 
   }
 }
 

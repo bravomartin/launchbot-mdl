@@ -189,8 +189,8 @@ $button-focus-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 // Colored button colors.
 $button-primary-color-alt: unquote("rgb(#{$color-primary})") !default;
 $button-secondary-color-alt: unquote("rgb(#{$color-primary-contrast})") !default;
-$button-hover-color-alt: unquote("rgb(#{$color-primary})") !default;
-$button-active-color-alt: unquote("rgb(#{$color-primary})") !default;
+$button-hover-color-alt: unquote("rgb(#{$color-primary-dark})") !default;
+$button-active-color-alt: unquote("rgb(#{$color-primary-dark})") !default;
 $button-focus-color-alt: $button-focus-color !default;
 
 // Ripple color for colored raised buttons.
@@ -422,7 +422,7 @@ $list-avatar-text-left-distance: 72px !default;
 $list-icon-text-left-distance: 72px !default;
 
 $list-avatar-size: 40px !default;
-$list-icon-size: 24px !default;
+$list-icon-size: 22px !default;
 
 $list-two-line-height: 72px !default;
 $list-three-line-height: 88px !default;
@@ -494,7 +494,7 @@ $checkbox-ripple-size: $checkbox-label-height * 1.5;
 $card-width: 330px !default;
 $card-height: 200px !default;
 $card-font-size: 16px !default;
-$card-title-font-size: 24px !default;
+$card-title-font-size: 36px !default;
 $card-subtitle-font-size: 14px !default;
 $card-horizontal-padding: 16px !default;
 $card-vertical-padding: 16px !default;
