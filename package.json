@@ -2,7 +2,6 @@
   "name": "@oreillymedia/launchbot-mdl",
   "version": "1.0.0",
   "description": "Styleguide for Launchbot",
-  "private": true,
   "license": "Apache-2.0",
   "author": "Martin Bravo",
   "repository": "github.com/odewahn/launchbot-mdl",
