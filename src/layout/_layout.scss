@@ -437,7 +437,7 @@
   .mdl-layout__content {
     // Fix IE10 bug.
     -ms-flex: 0 1 auto;
-
+    min-height: 80vh;
     position: relative;
     display: inline-block;
     overflow-y: auto;
