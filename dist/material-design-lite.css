@@ -903,8 +903,7 @@ blockquote {
   font-size: 24px;
   font-weight: 300;
   font-style: italic;
-  line-height: 1.35;
-  letter-spacing: 0.08em; }
+  line-height: 1.35; }
   blockquote:before {
     position: absolute;
     left: -0.5em;
@@ -2157,7 +2156,7 @@ ul, ol {
 /* Dialog */
 .mdl-button {
   background: transparent;
-  border: none;
+  border: 1px solid rgba(158,158,158, 0.20);
   border-radius: 0px;
   color: rgb(0,0,0);
   position: relative;
@@ -2311,12 +2310,14 @@ input.mdl-button[type="submit"] {
     color: rgb(250,250,250);
     background-color: rgb(10, 55, 120); }
   .mdl-button--primary.mdl-button--primary:hover {
+    color: rgb(250,250,250);
     background: rgb(0,50,100); }
   .mdl-button--primary.mdl-button--primary:active {
     background: rgb(10, 55, 120); }
 
 .mdl-button--accent.mdl-button--accent {
-  color: rgb(240,20,20); }
+  color: rgb(240,20,20);
+  border-color: rgb(240,20,20); }
   .mdl-button--accent.mdl-button--accent .mdl-ripple {
     background: rgb(250,250,250); }
   .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
@@ -2325,6 +2326,7 @@ input.mdl-button[type="submit"] {
 
 .mdl-button[disabled][disabled], .mdl-button.mdl-button--disabled.mdl-button--disabled {
   color: rgba(0,0,0, 0.26);
+  border-color: rgba(0,0,0, 0.26);
   cursor: default;
   background-color: transparent; }
 
@@ -5847,6 +5849,7 @@ input.mdl-button[type="submit"] {
 
 .mdl-layout__content {
   -ms-flex: 0 1 auto;
+  min-height: 80vh;
   position: relative;
   display: inline-block;
   overflow-y: auto;
@@ -9275,10 +9278,9 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 .lb-header .lb-nav-item {
   cursor: pointer;
   display: inline-block;
-  height: 64px;
+  height: 100%;
   position: relative;
   box-sizing: border-box;
-  padding-top: 20px;
   padding-left: 15px;
   padding-right: 15px; }
   .lb-header .lb-nav-item .mdl-button--icon:hover {

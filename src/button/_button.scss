@@ -20,7 +20,7 @@
 // The button component. Defaults to a flat button.
 .mdl-button {
   background: transparent;
-  border: none;
+  border: 1px solid $button-hover-color;
   border-radius: $button-border-radius;
   color: $button-secondary-color;
   position: relative;
@@ -191,6 +191,7 @@ input.mdl-button[type="submit"] {
     overflow: hidden;
     color: inherit;
     line-height: normal;
+    border-color: transparent;
 
     & .material-icons {
       position: absolute;
@@ -259,6 +260,8 @@ input.mdl-button[type="submit"] {
 
 .mdl-button--accent.mdl-button--accent {
   color: $button-fab-color-alt;
+  border-color: $button-fab-color-alt;
+
   & .mdl-ripple {
     background: $button-fab-text-color-alt;
   }
@@ -275,6 +278,7 @@ input.mdl-button[type="submit"] {
   &[disabled][disabled],
   &.mdl-button--disabled.mdl-button--disabled {
     color: $button-secondary-color-disabled;
+    border-color: $button-hover-color;
     cursor: default;
     background-color: transparent;
   }
